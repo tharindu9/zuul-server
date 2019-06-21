@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: zuul-server
+
+
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+  instance:
+    instance-id: ${spring.application.name}-${random.int}
+
+
+server:
+  port: 8089

@@ -1,0 +1,11 @@
+
+ 
+zuul:
+ routes:
+   sample:
+     path: /sample/** #our zuul rest api path
+     #url: http://localhost:8088/sample/api # mapping resourse server rest contr
+     serviceId : zuul-server-example1 # here is the resourse service name register with discovry service
+
+   #localhos:8089/sample/api/hello
+    
